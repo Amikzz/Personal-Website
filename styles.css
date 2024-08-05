@@ -510,3 +510,52 @@ h1{
 article{
     margin-bottom: 5%;
 }
+
+.contact {
+    padding: 40px 20px;
+    background-color: #f9f9f9; /* Light background color for contrast */
+    color: #333; /* Text color */
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Madimi One', sans-serif;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}

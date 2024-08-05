@@ -1,0 +1,100 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="My personal website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Amika - Contact Me</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="images/logo.ico">
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    </head>
+
+    <body class="madimi-one-regular">
+        <div class="loader-container">
+        </div>
+
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+                <div class="nav-links" id="nav-links">
+                    <img src="images/kisspng-basic-ui-set-icon-close-icon-5d407609d32f25.887664551564505609865-removebg-preview.png" alt="close" class="closeimg" onclick="hideMenu()">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <img src="images/269dd16fa1f5ff51accd09e7e1602267.png" alt="menu" class="menuimg" onclick="showMenu()">
+            </nav>
+
+            <div class="textbox">
+                <h1 class="abouttext">Contact Me</h1>
+                <br>
+            </div>
+            </section>
+            
+            <section class="contact">
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h2>Get in Touch</h2>
+                        <p>If you have any questions or just want to say hi, feel free to drop me a message. I'll get back to you as soon as possible!</p>
+                        <ul>
+                            <li><strong>Email:</strong> <a href="mailto:amixx2005@gmail.com">amixx2005@gmail.com</a></li>
+                            <li><strong>Phone:</strong> +94 123 456 789</li>
+                            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/amika-subasinghe-a52b6a1a9" target="_blank">Connect with me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <section class="footer">
+                    <div class="footer-container">
+                        <div class="footer-box">
+                            <a href="https://web.facebook.com/amika.subasingha" target="_blank"> <img src="images/facebook-logo-icon-facebook-logo-png-transparent-svg-vector-bie-supply-16.png" alt="Facebook logo" width="50px"> </a>
+                        </div>
+                        <div class="footer-box">
+                            <a href="https://www.instagram.com/___amik.a_i.ls.___/" target="_blank"> <img src="images/pngtree-three-dimensional-instagram-icon-png-image_9015419.png" alt="Instagram logo"> </a>
+                        </div>
+                        <div class="footer-box">
+                            <a href="https://twitter.com/Amikzz2005" target="_blank"> <img src="images/twitter-x-logo-0339F999CF-seeklogo.com.png" alt="Twitter logo"> </a>
+                        </div>
+                        <div class="footer-box">
+                            <a href="https://www.linkedin.com/in/amika-subasinghe-a52b6a1a9" target="_blank"> <img src="images/linkedin-logo-on-transparent-isolated-background-free-vector-removebg-preview.png" alt="LinkedIn logo"> </a>
+                        </div>
+                        <div class="footer-box">
+                            <a href="https://wa.link/rbpx4r" target="_blank"> <img src="images/pngimg.com - whatsapp_PNG21.png" alt="WhatsApp logo"></a>
+                        </div>
+                        <div class="footer-box">
+                            <a href="https://mail.google.com/mail/u/?authuser=amixx2005@gmail.com"><img src="images/gmail_icon-icons.com_62758.png" alt="Gmail logo"></a>
+                        </div>
+                    </div>
+                    <div class="footerlogo">
+                        <img src="images/logo.png" alt="logo" width="300px">
+                    <div class="footer-bottom">
+                        <p>Created by Amika Subasinghe | &copy; 2024 All rights reserved.</p>
+                </section>
+            </footer>
+
+            <script>
+                window.addEventListener("load", () => {
+                    document.querySelector(".loader-container").classList.add("loader-container--hidden");
+                    document.querySelector(".loader-container").addEventListener("transitionend", () => {
+                        document.body.removeChild(document.querySelector(".loader-container"));
+                    });
+                });
+    
+                var navLinks = document.getElementById("nav-links");
+                function showMenu(){
+                    navLinks.style.right = "0";
+                }
+                function hideMenu(){
+                    navLinks.style.right = "-200px";
+                }
+            </script>
+    </body>
+</html>
